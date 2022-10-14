@@ -17,6 +17,9 @@ function App() {
         >
           Learn React - GitHub Actions
         </a>
+        <div>Email: contact@react.com</div>
+        <div>Phone: 551-524 466 256</div>
+        <div>Web: react.com</div>
       </header>
     </div>
   );
