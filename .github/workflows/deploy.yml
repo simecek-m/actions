@@ -53,7 +53,7 @@ jobs:
           region: ${{ env.REGION }}
           # NOTE: If using a pre-built image, update the image name here
           image: ${{ env.GAR_LOCATION }}-docker.pkg.dev/${{ env.PROJECT_ID }}/${{ env.REPOSITORY }}/${{ env.SERVICE }}:${{ github.sha }}
-          secrets: |
+          env_vars: |
             MODE = ${{secrets.MODE}}
             LOG_LEVEL = ${{secrets.LOG_LEVEL}}
             LOG_FOLDER = ${{secrets.LOG_FOLDER}}
