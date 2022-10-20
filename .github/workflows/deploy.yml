@@ -74,11 +74,9 @@ jobs:
             MODE=${{secrets.MODE}}
             LOG_LEVEL=${{secrets.LOG_LEVEL}}
             LOG_FOLDER=${{secrets.LOG_FOLDER}}
-            PORT=${{secrets.PORT}}
             MONGO_CONNECTION_STRING_FORMAT=${{secrets.MONGO_CONNECTION_STRING_FORMAT}}
             MONGO_SERVER_HOST=${{secrets.MONGO_SERVER_HOST}}
             MONGO_DATABASE_NAME=${{secrets.MONGO_DATABASE_NAME}}
-            MONGO_SERVER_PORT=${{secrets.MONGO_SERVER_PORT}}
             MONGO_AUTHENTICATION=${{secrets.MONGO_AUTHENTICATION}}
             MONGO_USER=${{secrets.MONGO_USER}}
             MONGO_PASSWORD=${{secrets.MONGO_PASSWORD}}
