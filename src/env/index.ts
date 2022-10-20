@@ -16,7 +16,7 @@ const logger = createLogger();
 // log state of loading .env file
 if (loadEnvFileResult.error) {
   logger.warn(`Missing ${path} file!`);
-  logger.warn(process.env);
+  logger.warn(JSON.stringify(process.env));
 } else {
   logger.info(`${path} loaded successfully.`);
 }
