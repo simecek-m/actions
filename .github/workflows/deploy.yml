@@ -70,7 +70,22 @@ jobs:
           #  env_vars: |
           #  NODE_ENV=production
           #  TOKEN_EXPIRE=6400
-
+          env_vars: |
+            MODE=${{secrets.MODE}}
+            LOG_LEVEL=${{secrets.LOG_LEVEL}}
+            LOG_FOLDER=${{secrets.LOG_FOLDER}}
+            PORT=${{secrets.PORT}}
+            MONGO_CONNECTION_STRING_FORMAT=${{secrets.MONGO_CONNECTION_STRING_FORMAT}}
+            MONGO_SERVER_HOST=${{secrets.MONGO_SERVER_HOST}}
+            MONGO_DATABASE_NAME=${{secrets.MONGO_DATABASE_NAME}}
+            MONGO_SERVER_PORT=${{secrets.MONGO_SERVER_PORT}}
+            MONGO_AUTHENTICATION=${{secrets.MONGO_AUTHENTICATION}}
+            MONGO_USER=${{secrets.MONGO_USER}}
+            MONGO_PASSWORD=${{secrets.MONGO_PASSWORD}}
+            AUTH_AUDIENCE=${{secrets.AUTH_AUDIENCE}}
+            AUTH_ISSUER_BASE_URL=${{secrets.AUTH_ISSUER_BASE_URL}}
+            TREBLLE_API_KEY=${{secrets.TREBLLE_API_KEY}}
+            TREBLLE_PROJECT_ID=${{secrets.TREBLLE_PROJECT_ID}}
       # If required, use the Cloud Run url output in later steps
       - name: Show Output
         run: echo ${{ steps.deploy.outputs.url }}
