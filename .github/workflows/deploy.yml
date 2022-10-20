@@ -6,10 +6,10 @@ env:
   REPOSITORY: leafs
   SERVICE: leafs-server
   REGION: europe-west1
-environment: deploy
 jobs:
   deploy:
     # Add 'id-token' with the intended permissions for workload identity federation
+    environment: deploy
     permissions:
       contents: "read"
       id-token: "write"
