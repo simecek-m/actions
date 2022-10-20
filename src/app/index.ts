@@ -46,6 +46,9 @@ export async function start(): Promise<Application> {
     });
   }
 
+  logger.info("process.env:");
+  logger.warn(process.env);
+
   // api protected routes
   app.use("/api", protectedRoutes);
 
