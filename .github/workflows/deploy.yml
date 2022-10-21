@@ -58,5 +58,3 @@ jobs:
             AUTH_ISSUER_BASE_URL=${{secrets.AUTH_ISSUER_BASE_URL}}
             TREBLLE_API_KEY=${{secrets.TREBLLE_API_KEY}}
             TREBLLE_PROJECT_ID=${{secrets.TREBLLE_PROJECT_ID}}
-      - name: Show Output
-        run: echo ${{ steps.deploy.outputs.url }}
